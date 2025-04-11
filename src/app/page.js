@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black container">
       <Navbar />
-      <div className="container mx-auto px-12 py-4">
+      <div className="container mt-15 mx-auto px-12 py-4">
         <Intro />
       </div>
     </div>
