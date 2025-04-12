@@ -27,8 +27,6 @@ const Intro = () => {
               sequence={[
                 "Full Stack Developer",
                 1000,
-                "Data Scientist",
-                1000,
                 "AI/ML Enthusiast",
                 1000,
                 "Weekend Musician",
