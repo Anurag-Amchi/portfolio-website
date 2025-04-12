@@ -8,56 +8,59 @@ const projectsData = [
   {
     id: 1,
     title: "Real Time Chat App",
-    description: "Project 1 description",
+    description: "Full Stack Chat App made with Socket.IO",
     image: "/images/flowchat.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Anurag-Amchi/flowChat_alpha",
+    previewUrl: "https://flow-chat-app.vercel.app/login",
   },
   {
     id: 2,
     title: "Finance Tracker",
-    description: "Project 2 description",
+    description: "Full Stack web app to track finances",
     image: "/images/fintrack.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Anurag-Amchi/finance-tracker",
+    previewUrl: "https://fintrack-green.vercel.app/",
   },
   {
     id: 3,
     title: "Collision detection using quadtree",
-    description: "Project 3 description",
+    description: "Optimised collision detection using quadtree",
     image: "/images/quadtree.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Anurag-Amchi/Quadtree-Collision-Detection",
+    previewUrl: "https://quadtree-collision-detection.netlify.app/",
   },
   {
     id: 4,
     title: "Movie Recommender",
-    description: "Project 4 description",
+    description:
+      "Predicting movies using collaborative filtering and content-based algorithm",
     image: "/images/movie.png",
     tag: ["All", "AI/ML"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Anurag-Amchi/Movie-Recommendation-system",
+    previewUrl: "https://github.com/Anurag-Amchi/Movie-Recommendation-system",
   },
   {
     id: 5,
     title: "Customer churn predictor",
-    description: "Authentication and CRUD operations",
+    description:
+      "Detecting who are likely to stop using a service or product in the future",
     image: "/images/churn.png",
     tag: ["All", "AI/ML"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Anurag-Amchi/customer-churn-prediction",
+    previewUrl: "https://github.com/Anurag-Amchi/customer-churn-prediction",
   },
   {
     id: 6,
     title: "Multi Task Neural Network",
-    description: "Project 5 description",
+    description:
+      "Multi task Regression and classification using single model with Neural Networks",
     image: "/images/multi.png",
     tag: ["All", "AI/ML"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Anurag-Amchi/Multi-task-neural-network",
+    previewUrl: "https://github.com/Anurag-Amchi/Multi-task-neural-network",
   },
 ];
 
@@ -81,7 +84,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-yellow-400 mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-yellow-400 mt-10 mb-8 md:mb-12">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">

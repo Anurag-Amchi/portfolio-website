@@ -40,18 +40,34 @@ const Intro = () => {
           </span>
         </h1>
         <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex,
-          corporis voluptate cum sed aut aliquam nisi impedit quos quo?
+          Being an Engineering student I am passionate about building
+          intelligent software and creating meaningful tech experiences. I write
+          code that solves problems, design systems that scale, and when I'm not
+          debugging, you'll find me exploring music.
         </p>
         <div>
-          <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 to-yellow-300 text-white">
+          <button
+            className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-500 to-yellow-300 text-white"
+            onClick={() => {
+              const contactSection = document.getElementById("contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">
               Contact Me
             </span>
           </button>
-          <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-orange-500 to-yellow-300 text-black hover:bg-gradient-to-tl from-orange-500 to-yellow-300 mt-3">
+          <a
+            href="/Anurag_CV.pdf"
+            download="Anurag_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-orange-500 to-yellow-300 text-black hover:bg-gradient-to-tl from-orange-500 to-yellow-300 mt-3 inline-block text-center"
+          >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
     </section>
