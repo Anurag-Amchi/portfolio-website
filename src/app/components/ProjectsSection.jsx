@@ -81,7 +81,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-yellow-400 mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -112,7 +112,16 @@ const ProjectsSection = () => {
           >
             <ProjectCard
               key={project.id}
-              title={project.title}
+              title={
+                <a
+                  href={project.gitUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {project.title}
+                </a>
+              }
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}

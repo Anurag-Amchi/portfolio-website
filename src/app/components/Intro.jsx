@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Intro = () => {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-12">
+    <section className="grid grid-cols-1 sm:grid-cols-12 mb-15 mt-10">
       <div className="text-white place-self-center col-span-5">
         <Image
           src="/images/Me_casual.jpg"
@@ -49,7 +49,7 @@ const Intro = () => {
               Contact Me
             </span>
           </button>
-          <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-orange-500 to-yellow-300 text-black mt-3">
+          <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent bg-gradient-to-br from-orange-500 to-yellow-300 text-black hover:bg-gradient-to-tl from-orange-500 to-yellow-300 mt-3">
             Download CV
           </button>
         </div>

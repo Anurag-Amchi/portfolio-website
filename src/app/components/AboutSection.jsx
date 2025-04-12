@@ -6,7 +6,7 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 py-8 px-8 xl:gap-16 sm:py-8 xl:px-8">
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full mb-8">
           <h2 className="text-4xl font-bold text-yellow-400 mb-4">About Me</h2>
-          <ul className="list-disc">
+          <ul className="list-disc text-lg">
             <li>
               I am currently in my Pre-Final year pursuing my Bachelor's Degree
               in Mathematics and Computing from Indian Institute of Technology

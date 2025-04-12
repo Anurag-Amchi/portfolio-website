@@ -21,16 +21,16 @@ const Experience = () => {
         <TimelineItem>
           <TimelinePoint icon={HiCalendar} />
           <TimelineContent>
-            <TimelineTime className="text-white font-bold">
+            <TimelineTime className="text-white font-bold text-lg">
               September 2023 - March 2024
             </TimelineTime>
-            <TimelineTitle>
+            <TimelineTitle className="text-2xl">
               Machine Learning Intern
               <br></br>
               Borde Inc.
             </TimelineTitle>
             <TimelineBody>
-              <ul className="list-disc text-white">
+              <ul className="list-disc text-white text-lg">
                 <li>
                   Helped the team to automate annotations and segmentation to
                   improve the accuracy of various assigned classes.
@@ -41,7 +41,6 @@ const Experience = () => {
                 </li>
               </ul>
             </TimelineBody>
-            <Button color="gray">Certificate</Button>
           </TimelineContent>
         </TimelineItem>
       </Timeline>

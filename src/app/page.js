@@ -10,10 +10,10 @@ import Chatbot from "./components/Chatbot";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-black container">
+    <div className="min-h-screen flex flex-col bg-black">
       <Chatbot />
       <Navbar />
-      <div className="container mt-20 mx-auto px-12 py-4">
+      <div className="container mt-20 mx-auto px-4 sm:px-8 lg:px-12 py-8 bg-black">
         <Intro />
         <AboutSection />
         <Experience />

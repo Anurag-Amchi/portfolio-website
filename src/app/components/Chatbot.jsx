@@ -17,7 +17,6 @@ const Chatbot = () => {
     if (!input.trim() || loading) return;
 
     try {
-      // Add user message
       const userMessage = {
         id: Date.now(),
         sender: "user",
@@ -27,7 +26,6 @@ const Chatbot = () => {
       setInput("");
       setLoading(true);
 
-      // API call
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -38,7 +36,6 @@ const Chatbot = () => {
 
       const data = await response.json();
 
-      // Add bot message
       const botMessage = {
         id: Date.now() + 1,
         sender: "bot",
@@ -62,15 +59,15 @@ const Chatbot = () => {
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 z-50"
+        className="fixed bottom-7 right-6 bg-gradient-to-br from-orange-500 to-yellow-300 text-white p-3 rounded-full min-w-12 md:min-w-18 md:min-h-18 shadow-lg hover:bg-gradient-to-tl from-orange-500 to-yellow-300 z-50 md:text-3xl"
       >
-        💬
+        AI
       </button>
 
       {open && (
-        <div className="fixed bottom-16 right-4 w-80 h-96 bg-white shadow-2xl rounded-xl flex flex-col z-50">
-          <div className="p-3 font-bold bg-blue-600 text-white rounded-t-xl">
-            Chat Assistant 🤖
+        <div className="fixed bottom-21 right-6 md:bottom-27 w-80 h-96 md:h-110 md:w-90 bg-white shadow-lg shadow-amber-200 rounded-xl flex flex-col z-50">
+          <div className="p-3 font-bold bg-gradient-to-br from-orange-500 to-yellow-300 text-white rounded-t-xl">
+            Chat Assistant
           </div>
 
           <div className="flex-1 overflow-y-auto p-3 space-y-2 text-sm">
@@ -79,8 +76,8 @@ const Chatbot = () => {
                 key={msg.id}
                 className={`p-2 rounded max-w-[80%] ${
                   msg.sender === "user"
-                    ? "ml-auto bg-blue-100 text-black"
-                    : "bg-blue-600 text-white"
+                    ? "ml-auto bg-yellow-100 text-black"
+                    : "bg-yellow-400 text-white"
                 }`}
               >
                 {msg.text}
@@ -102,7 +99,7 @@ const Chatbot = () => {
             />
             <button
               type="submit"
-              className="ml-2 px-3 bg-blue-600 text-white rounded disabled:bg-gray-400"
+              className="ml-2 px-3 bg-gradient-to-br from-orange-500 to-yellow-300 text-white rounded hover:bg-gradient-to-tl from-orange-500 to-yellow-300 disabled:bg-gray-400"
               disabled={loading}
             >
               Send
