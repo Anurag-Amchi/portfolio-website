@@ -1,9 +1,9 @@
-import Intro from "@/components/Intro";
-import Navbar from "@/components/Navbar";
+import Navbar from "./components/Navbar";
 import Image from "next/image";
-import AboutSection from "@/components/AboutSection";
-import Experience from "@/components/Experience";
-import ProjectsSection from "@/components/ProjectsSection";
+import AboutSection from "./components/AboutSection";
+import Experience from "./components/Experience";
+import ProjectsSection from "./components/ProjectsSection";
+import Intro from "./components/Intro";
 
 export default function Home() {
   return (
