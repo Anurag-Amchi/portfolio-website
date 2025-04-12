@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Anurag Amchi",
   description: "Crafted with love by Anurag Amchi",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
