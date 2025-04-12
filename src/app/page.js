@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import AboutSection from "@/components/AboutSection";
 import Experience from "@/components/Experience";
+import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Intro />
         <AboutSection />
         <Experience />
+        <ProjectsSection />
       </div>
     </div>
   );
